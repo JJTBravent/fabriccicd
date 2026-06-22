@@ -1,0 +1,60 @@
+table tabla_dummy
+	lineageTag: f57db772-8b0b-49e4-bb95-c89618618d8c
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: b1a611dd-9050-41c1-b799-9bdd5099a1e9
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre
+		dataType: string
+		lineageTag: bec96753-afab-4ba0-8670-b5bc625e1a5a
+		summarizeBy: none
+		sourceColumn: nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria
+		dataType: string
+		lineageTag: bb476bc9-6670-47ee-afe9-722dff5b1d7c
+		summarizeBy: none
+		sourceColumn: categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: double
+		lineageTag: 9476c861-0837-4082-a5b0-514d91347204
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 347fc1f5-cea1-439a-87bc-8a4b9cfa203c
+		summarizeBy: none
+		sourceColumn: fecha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition tabla_dummy = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("qimltroehkyu7hubdi24kaozpq-ktrcnuz3q66upndkcd5ztxemtu.datawarehouse.fabric.microsoft.com", "lh_test"),
+				    dbo_tabla_dummy = Source{[Schema="dbo",Item="tabla_dummy"]}[Data]
+				in
+				    dbo_tabla_dummy
+
+	annotation PBI_ResultType = Table
+

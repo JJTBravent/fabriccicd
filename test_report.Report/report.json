@@ -1,0 +1,43 @@
+{
+  "config": "{\"version\":\"5.73\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY26SU05\",\"version\":{\"visual\":\"2.9.0\",\"report\":\"3.3.0\",\"page\":\"2.3.1\"},\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Middle'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY26SU05",
+            "path": "BaseThemes/CY26SU05.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "9a7b1db7400b50267de3",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"df653ec4e4c38d1e6976\",\"layouts\":[{\"id\":0,\"position\":{\"x\":419.209726443769,\"y\":219.8176291793313,\"z\":0,\"width\":441.580547112462,\"height\":280.1215805471125,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(tabla_dummy.id)\"},{\"queryRef\":\"tabla_dummy.nombre\"},{\"queryRef\":\"Sum(tabla_dummy.valor)\"},{\"queryRef\":\"tabla_dummy.fecha\"},{\"queryRef\":\"tabla_dummy.categoria\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"tabla_dummy\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"id\"}},\"Function\":0},\"Name\":\"Sum(tabla_dummy.id)\",\"NativeReferenceName\":\"Sum of id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"nombre\"},\"Name\":\"tabla_dummy.nombre\",\"NativeReferenceName\":\"nombre\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"valor\"}},\"Function\":0},\"Name\":\"Sum(tabla_dummy.valor)\",\"NativeReferenceName\":\"Sum of valor\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"fecha\"},\"Name\":\"tabla_dummy.fecha\",\"NativeReferenceName\":\"fecha\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"categoria\"},\"Name\":\"tabla_dummy.categoria\",\"NativeReferenceName\":\"categoria\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 280.12,
+          "queryBinary": "H4sIAAAAAAAEALVUXUvDMBT9KyNPCkHaTV/6pnPzQZS5ynyQIVl610WapKTJXCn97yZpt/bBojB8y7kf55zc5rZCU8k5EUmBovcKxWDPmtEXA6q8J5rEO5JDW4KiCvmEO6xAFUwKFI0xmivJffsz4YAipBFGM0ujSwfIJiMfieG8tOHXMrcVQb3GVisDqn3fbZoqSIn2hBWaHXIFRdGiqcwM/yEeS6MoLGHbAa9d1xgtlMxBeX2W+MjcCNrwBxa1RmPDL3r+rlhyiVxSs70jBgWCQlc7ktuRo8NnmxKSbxSgzknfRZscMnLq/d+57Ukm1d9H58t/nV5Lev4At0B3ZGB+TW7IybHzbAuUaEilYkM2uvyQlR7D2nLcMZEwkTrVhWKcNIv2oKTJbbhZUKv/Cf5rOBzgEI/xBF+7dTIbLTXJUBR6Nre9S0gMPb4OF1i5K1vpCe5LvFlh+dW8GSPsSt4EQe1ue1ry0ILZAahxZE+gFaPFI3O/hLC2at/dRevpRgQAAA==",
+          "width": 441.58,
+          "x": 419.21,
+          "y": 219.82,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
