@@ -34,6 +34,7 @@ from datetime import date
 spark = SparkSession.builder.getOrCreate()
 
 # Definir el esquema
+#Desarrollo
 schema = StructType([
     StructField("id", IntegerType(), False),
     StructField("nombre", StringType(), True),
