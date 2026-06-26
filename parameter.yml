@@ -1,0 +1,16 @@
+find_replace:
+    - find_value: "Desarrollo"
+      replace_value:
+        PROD: Produccion
+      # SQL Endpoint
+    - find_value: "qimltroehkyu7hubdi24kaozpq-ktrcnuz3q66upndkcd5ztxemtu.datawarehouse.fabric.microsoft.com"
+      replace_value:
+        PROD: qimltroehkyu7hubdi24kaozpq-camgsr2vom6eddp3e53ujd3th4.datawarehouse.fabric.microsoft.com
+      # Warehouse ID
+    - find_value: "703b5adf-ffbd-4ed6-a4f8-765699bb09f2"
+      replace_value:
+        PROD: 07a35aee-e0ea-4b2f-9eea-2cd9a7a06d76
+      # Lakehouse ID
+    - find_value: "dbc9ce2b-8fbb-4fc7-8867-d9e92c8aa79e"
+      replace_value:
+        PROD: 6719953f-dccc-4863-8980-ce845992b8f6
